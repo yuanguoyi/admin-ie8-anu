@@ -11,6 +11,4 @@ https://github.com/magicapple/anujs-webpack4-ie7-8
  npm run start
  npm run build
 ```
-运行在ie8下需要打包后才能访问
-```
 
