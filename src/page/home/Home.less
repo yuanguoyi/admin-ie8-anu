@@ -1,0 +1,57 @@
+// color
+@black : #001529;   // 页面主色调，用于头部和菜单栏
+@blue : #3792ff;    // 内容主色调，按钮、重要文字、图形底色、图标
+@orange : #fac200;  // 温馨提示，详情，及部分按钮
+@green : #00d181;   // 用于进度条颜色、成功等辅助色
+
+@yiban1 :#333333;     // 用于一般性标文字标题
+@yiban2 : #666666;    // 用于普通级段落信息和引导词
+@yiban3 : #999999;    // 用于弱文字和说明性文案
+@yiban4 : #F5F5F5;    // 用于Tab主背景色
+
+@putong1: #f0f2f5;    // 用于页面背景色
+@putong1: #dcdcdc;    // 用于模块边框线条色
+@putong1: #d8d8d8;    // 用于不可使用的icon、文字
+
+.home{
+  width: 100%;
+  height: 100%;
+  // position:relative;
+  //background-color: #5bc0de;
+
+  .home-header{
+    width: 100%;
+    height: 64px;
+    //background-color: #00d181;
+  }
+
+  .home-content{
+    width: 100%;
+    position: absolute;
+    top: 64px;
+    bottom: 0;
+
+    .home-left{
+      // 宽度依据LeftNav宽度而定
+      float:left;
+      height: 100%;
+    }
+
+    .home-right{
+      // 始终铺满导航剩余的部分
+      height: 100%;
+      padding: 0 22px;
+      overflow:hidden;
+      overflow-y: auto;
+      background: #F0F2F5;
+
+      .home-right-wrap{
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        margin: auto;
+        //border: 1px solid #888888;
+      }
+    }
+  }
+}

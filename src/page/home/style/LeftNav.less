@@ -1,0 +1,137 @@
+// color
+@black : #001529;   // 页面主色调，用于头部和菜单栏
+@blue : #3792ff;    // 内容主色调，按钮、重要文字、图形底色、图标
+@orange : #fac200;  // 温馨提示，详情，及部分按钮
+@green : #00d181;   // 用于进度条颜色、成功等辅助色
+
+@yiban1 :#333333;     // 用于一般性标文字标题
+@yiban2 : #666666;    // 用于普通级段落信息和引导词
+@yiban3 : #999999;    // 用于弱文字和说明性文案
+@yiban4 : #F5F5F5;    // 用于Tab主背景色
+
+@putong1: #f0f2f5;    // 用于页面背景色
+@putong1: #dcdcdc;    // 用于模块边框线条色
+@putong1: #d8d8d8;    // 用于不可使用的icon、文字
+
+.left-nav{
+  //width: 240px;        //宽度变化，左侧导航区域也变化
+  height: 100%;
+
+  .Level-1{
+    float: left;
+    width: 100px;
+    height: 100%;
+    overflow-y: auto;
+    box-sizing:border-box;
+    border-top: 1px solid @yiban2;
+    background-color: @black;
+
+    .Level-1-item{
+      margin: 0;
+      padding: 0;
+      width: 100px;
+      height: 60px;
+      box-sizing:border-box;
+      //border-bottom: 1px solid @yiban2;
+      cursor: pointer;
+
+      div{
+        float: left;
+        margin: 0 5px;
+        text-align: center;
+        //background-color: #00d181;
+
+        i{
+          font-size: 20px;
+          color:#fff;
+          line-height: 60px;
+        }
+      }
+
+      p{
+        float: left;
+        text-align: center;
+        font-size:16px;
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+        color:#fff;
+        line-height:60px;
+      }
+    }
+
+    .Level-1-item:hover,.Level-1-item.checked{
+      background-color: #ffffff;
+
+      div{
+        i{
+          color:#333333;
+        }
+      }
+
+      p{
+        color:#333333;
+      }
+    }
+  }
+
+  .Level-2{
+    float: left;
+    //width: 150px;
+    height: 100%;
+    overflow-y: auto;
+    //background-color: deepskyblue;
+
+    .allTitle{
+      height: 50px;
+      text-align: center;
+      //border-bottom: 1px solid #E5E5E5;
+      font-size:16px;
+      font-family:MicrosoftYaHei;
+      font-weight:bold;
+      color:#333333;
+      line-height:50px;
+    }
+
+    .Level-2-content{
+      width: 150px;
+      text-align: center;
+
+      .Level-2-header{
+        height: 40px;
+        text-align: left;
+        padding: 0 20px;
+        border-top: 1px solid #E5E5E5;
+        //border-bottom: 1px solid #E5E5E5;
+        font-size:12px;
+        font-family:MicrosoftYaHei;
+        //font-weight:bold;
+        color:#999999;
+        line-height:40px;
+      }
+
+      .Level-2-item{
+        display: inline-block;
+        width:135px;
+        height:40px;
+        padding: 0 10px;
+        margin: 8px 0 0;
+        text-align: left;
+        border-radius:4px;
+        font-size:16px;
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+        color:#666666;
+        line-height:40px;
+        cursor: pointer;
+        // 单行文本溢出
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+      }
+
+      .Level-2-item:hover,.Level-2-item.checked{
+        background-color: #EEF7FF;
+      }
+    }
+  }
+}
